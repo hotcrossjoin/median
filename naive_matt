@@ -1,0 +1,7 @@
+SELECT
+  species,
+  MEDIAN(flipper_length_mm) AS median_flipper_length
+FROM
+  `bigquery-public-data.ml_datasets.penguins`
+GROUP BY
+  species
